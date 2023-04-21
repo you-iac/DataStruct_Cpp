@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/.vs/DataStruct_Cpp/v17/ipch/AutoPCH
+/.vs/DataStruct_Cpp/v17
+/.vs/DataStruct_Cpp/FileContentIndex
