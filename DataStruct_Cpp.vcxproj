@@ -129,14 +129,20 @@
   <ItemGroup>
     <ClCompile Include="DLinkList.cpp" />
     <ClCompile Include="LinkList.cpp" />
+    <ClCompile Include="LinkStack.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SqList.cpp" />
+    <ClCompile Include="SqQueue.cpp" />
+    <ClCompile Include="SqStack.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLinkList.h" />
     <ClInclude Include="LinkList.h" />
+    <ClInclude Include="LinkStack.h" />
     <ClInclude Include="SqList.h" />
+    <ClInclude Include="SqQueue.h" />
+    <ClInclude Include="SqStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
