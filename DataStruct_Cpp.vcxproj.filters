@@ -22,6 +22,9 @@
     <Filter Include="头文件\Queue">
       <UniqueIdentifier>{b7229392-58f3-4c4d-be94-6483cc60e973}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Tree">
+      <UniqueIdentifier>{da17a8be-d4bf-497b-8a81-bea055d9c8d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
@@ -30,23 +33,23 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SqQueue.cpp">
+      <Filter>头文件\Queue</Filter>
+    </ClCompile>
     <ClCompile Include="DLinkList.cpp">
       <Filter>头文件\List</Filter>
     </ClCompile>
     <ClCompile Include="LinkList.cpp">
       <Filter>头文件\List</Filter>
     </ClCompile>
-    <ClCompile Include="SqList.cpp">
-      <Filter>头文件\List</Filter>
-    </ClCompile>
     <ClCompile Include="LinkStack.cpp">
+      <Filter>头文件\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="SqList.cpp">
       <Filter>头文件\Stack</Filter>
     </ClCompile>
     <ClCompile Include="SqStack.cpp">
       <Filter>头文件\Stack</Filter>
-    </ClCompile>
-    <ClCompile Include="SqQueue.cpp">
-      <Filter>头文件\Queue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

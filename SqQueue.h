@@ -5,20 +5,20 @@
 #include<cstdio>
 
 typedef int ElemType;
-#define MaxSize 50
+#define MaxSize 10
 
 typedef struct {
 	ElemType data[MaxSize];
-	int top;
+	int front, rear;
 } SqQueue;
 
-void	InitStack(SqQueue &S);/*初始化顺序表*/
-bool	StackEmpty(SqQueue &S);
+void	InitQueue(SqQueue &S);/*初始化顺序表*/
+bool	QueueEmpty(SqQueue &S);
 
-bool 	 Push(SqQueue &S, ElemType e);
-bool	 Pop(SqQueue &S, ElemType& e);/**/
+bool 	 EnQueue(SqQueue &S, ElemType e);
+bool	 DeQueue(SqQueue &S, ElemType& e);/**/
 ElemType GetTop(SqQueue &S);
 
-void PrintStack(SqQueue &S);
+void PrintQueue(SqQueue &S);
 void QueueTest();
 #endif

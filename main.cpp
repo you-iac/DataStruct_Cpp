@@ -1,8 +1,11 @@
-#include"DLinkList.h"
+#include"SqQueue.h"
 #include<cstdio> 
-#include<cstring> 
+#include<cstring>
+#include<stack>
+
 
 int main()
 {
-    DLinkListTest();
+    
+    QueueTest();
 }

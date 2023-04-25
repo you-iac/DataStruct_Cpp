@@ -1,9 +1,12 @@
-#ifndef _SqStack_
-#define _SqStack_
 #include<cstdbool>
 #include<cstdlib>
 #include<cstdio>
 
+#ifndef _SqStack_
+#define _SqStack_
+/*静态存储实现循环队列
+//使用 1 放弃一个空间
+//2 用size 3 用tag*/
 typedef int ElemType;
 #define MaxSize 50
 
@@ -12,7 +15,7 @@ typedef struct {
 	int top;
 } SqStack;
 
-void	InitStack(SqStack& S);/*初始化顺序表*/
+void	InitStack(SqStack& S);/*初始化循环队列*/
 bool	StackEmpty(SqStack& S);
 
 bool 	 Push(SqStack& S, ElemType e);
