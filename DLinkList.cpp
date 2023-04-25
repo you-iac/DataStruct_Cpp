@@ -4,7 +4,7 @@
 inline DLinkList InitList()
 {
 	DLinkList L = (DLNode*)malloc(sizeof(DLNode));
-	L->Prior = L->Next = NULL;
+	L->Prior = L->next = NULL;
 	L->data = 0x80000000;
 	return L;
 }
@@ -21,18 +21,18 @@ bool 		ListInsert(DLinkList L, int i, ElemType e)
 		DLNode* p = L;
 		DLNode* T = (DLNode*)malloc(sizeof(DLNode));
 		T->data = e;
-		T->Prior = T->Next = NULL;
+		T->Prior = T->next = NULL;
 
-		for (; i - 1 > 0; i--, p = p->Next);/*寻找要插入的位置*/
+		for (; i - 1 > 0; i--, p = p->next);/*寻找要插入的位置*/
 
 		/*插入操作*/
 		/*处理后继指针*/
-		T->Next = p->Next;
-		p->Next = T;
+		T->next = p->next;
+		p->next = T;
 
 		/*处理前驱指针*/
 		/*如果T的后继存在，就让后继指向T*/
-		if (T->Next)T->Next->Prior = T;
+		if (T->next)T->next->Prior = T;
 		T->Prior = p;
 	}
 	return 0;
@@ -40,9 +40,9 @@ bool 		ListInsert(DLinkList L, int i, ElemType e)
 bool 		ListDelete(DLinkList L, int i);/**/
 bool 		PrintList(DLinkList L)
 {
-	DLinkList p = L->Next;
+	DLinkList p = L->next;
 
-	for (; p; p = p->Next)
+	for (; p; p = p->next)
 		printf("%d ", p->data);
 	printf("\n");
 
@@ -55,8 +55,8 @@ ElemType	GetElem(DLinkList L, int i);
 int  Length(DLinkList L)
 {
 	int i = 0;
-	LNode* p = L;
-	for (i = 0; p->Next != NULL; i++, p = p->Next);
+	LinkNode* p = L;
+	for (i = 0; p->next != NULL; i++, p = p->next);
 
 	return i;
 }
@@ -76,7 +76,7 @@ void DLinkListTest()
 	printf("链表长度:%d\n\n", Length(L));
 
 	printf("逆向输出：\n");
-	for (p = L; p->Next; p = p->Next);
+	for (p = L; p->next; p = p->next);
 
 	for (; p->Prior; p = p->Prior)
 		printf("%d ", p->data);

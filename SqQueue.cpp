@@ -1,32 +1,32 @@
 #include "SqQueue.h"
 
-void	InitQueue(SqQueue& S)
+void	InitQueue(SqQueue& Q)
 {
-    S.front = S.rear = 0;
+    Q.front = Q.rear = 0;
 }
-bool	StackEmpty(SqQueue& S)
+bool	StackEmpty(SqQueue& Q)
 {
-    if(S.front == S.rear)
+    if(Q.front == Q.rear)
     return false;
     else
     return true;
 }
-bool	QueueEmpty(SqQueue& S)
+bool	QueueEmpty(SqQueue& Q)
 {
-    if(S.front == S.rear)
+    if(Q.front == Q.rear)
         return false;
     else
         return true;
 }
 
-bool 	 EnQueue(SqQueue& S, ElemType e)
+bool 	 EnQueue(SqQueue& Q, ElemType e)
 {
     /*在循环队列中如果满队列 rear一直在front的下面，除非rear在最高位则*/
-    if ((S.rear+1)%MaxSize != S.front)
+    if ((Q.rear+1)%MaxSize != Q.front)
     {
-        S.data[S.rear] = e;
+        Q.data[Q.rear] = e;
         //加一取模;
-        S.rear = (S.rear+1) % MaxSize;
+        Q.rear = (Q.rear+1) % MaxSize;
         return true;
     }
     else {
@@ -34,13 +34,13 @@ bool 	 EnQueue(SqQueue& S, ElemType e)
     }
 
 }
-bool DeQueue(SqQueue& S, ElemType& e)
+bool DeQueue(SqQueue& Q, ElemType& e)
 {
     /*如果队列非空*/
-    if (QueueEmpty(S))
+    if (QueueEmpty(Q))
     {
-        e = S.front;
-        S.front = (S.front+1)%MaxSize;
+        e = Q.front;
+        Q.front = (Q.front+1)%MaxSize;
         return true;
     }
     else {
@@ -48,14 +48,14 @@ bool DeQueue(SqQueue& S, ElemType& e)
     }
 }
 
-void PrintQueue(SqQueue& S)
+void PrintQueue(SqQueue& Q)
 {
     int i = 0;
     for (i = MaxSize-1; i >= 0; i--)
     {
-        if (S.rear >= S.front && i<S.rear && i>=S.front || S.rear < S.front && (i > S.front || i < S.rear) )
+        if (Q.rear >= Q.front && i<Q.rear && i>=Q.front || Q.rear < Q.front && (i > Q.front || i < Q.rear) )
         {
-            printf("%d\n", S.data[i]);
+            printf("%d\n", Q.data[i]);
         }
         else {
             printf("%d\n", 0);
@@ -64,29 +64,28 @@ void PrintQueue(SqQueue& S)
 }
 void QueueTest()
 {
-
-    SqQueue S;
-    InitQueue(S);
+    SqQueue Q;
+    InitQueue(Q);
 
     int i = 0;
     for (i = 0; i < 10; i++)
-        EnQueue(S, rand());
-    PrintQueue(S);
+        EnQueue(Q, rand());
+    PrintQueue(Q);
     printf("插入一组数据\n");
 
     int x = 0;
     for (i = 0; i < 4; i++)
-        DeQueue(S, x);
-    PrintQueue(S);
+        DeQueue(Q, x);
+    PrintQueue(Q);
     printf("删除一组数据\n");
 
     for (i = 0; i < 3; i++)
-        EnQueue(S, rand());
-    PrintQueue(S);
+        EnQueue(Q, rand());
+    PrintQueue(Q);
     printf("再插入一组数据\n");
 
-    for (i = 0; QueueEmpty(S); i++)
-        DeQueue(S, x);
-    PrintQueue(S);
+    for (i = 0; QueueEmpty(Q); i++)
+        DeQueue(Q, x);
+    PrintQueue(Q);
     printf("删除全部数据\n");
 }

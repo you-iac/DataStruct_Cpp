@@ -1,2 +1,7 @@
-﻿  SqQueue.cpp
-  DataStruct_Cpp.vcxproj -> C:\Users\28695\Source\Repos\DataStruct_Cpp\x64\Debug\DataStruct_Cpp.exe
+﻿  main.cpp
+SqQueue.obj : error LNK2005: "void __cdecl QueueTest(void)" (?QueueTest@@YAXXZ) 已经在 LinkQueue.obj 中定义
+DLinkList.obj : error LNK2019: 无法解析的外部符号 "struct LinkNode * __cdecl InitList(void)" (?InitList@@YAPEAULinkNode@@XZ)，函数 "void __cdecl DLinkListTest(void)" (?DLinkListTest@@YAXXZ) 中引用了该符号
+    已定义且可能匹配的符号上的提示:
+      "struct Linknode * __cdecl InitList(void)" (?InitList@@YAPEAULinknode@@XZ)
+      "struct SLNode * __cdecl InitList(void)" (?InitList@@YAPEAUSLNode@@XZ)
+C:\Users\28695\Source\Repos\DataStruct_Cpp\x64\Debug\DataStruct_Cpp.exe : fatal error LNK1120: 1 个无法解析的外部命令
