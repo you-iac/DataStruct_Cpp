@@ -12,13 +12,14 @@ typedef struct {
 	int front, rear;
 } SqQueue;
 
-void	InitQueue(SqQueue &S);/*初始化顺序表*/
-bool	QueueEmpty(SqQueue &S);
+void	InitQueue(SqQueue &Q);/*初始化顺序表*/
+bool	QueueEmpty(SqQueue &Q);
 
-bool 	 EnQueue(SqQueue &S, ElemType e);
-bool	 DeQueue(SqQueue &S, ElemType& e);/**/
-ElemType GetTop(SqQueue &S);
+bool 	 EnQueue(SqQueue &Q, ElemType e);
+bool	 DeQueue(SqQueue &Q, ElemType& e);/**/
+ElemType GetTop(SqQueue &Q);
 
-void PrintQueue(SqQueue &S);
-void QueueTest();
+void PrintQueue(SqQueue &Q);
+void SqQueueTest();
+
 #endif

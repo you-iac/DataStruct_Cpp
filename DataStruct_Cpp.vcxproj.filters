@@ -36,20 +36,23 @@
     <ClCompile Include="SqQueue.cpp">
       <Filter>头文件\Queue</Filter>
     </ClCompile>
-    <ClCompile Include="DLinkList.cpp">
-      <Filter>头文件\List</Filter>
-    </ClCompile>
     <ClCompile Include="LinkList.cpp">
       <Filter>头文件\List</Filter>
     </ClCompile>
     <ClCompile Include="LinkStack.cpp">
       <Filter>头文件\Stack</Filter>
     </ClCompile>
-    <ClCompile Include="SqList.cpp">
-      <Filter>头文件\Stack</Filter>
-    </ClCompile>
     <ClCompile Include="SqStack.cpp">
       <Filter>头文件\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkQueue.cpp">
+      <Filter>头文件\Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="DLinkList.cpp">
+      <Filter>头文件\List</Filter>
+    </ClCompile>
+    <ClCompile Include="SqList.cpp">
+      <Filter>头文件\List</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +72,9 @@
       <Filter>头文件\Stack</Filter>
     </ClInclude>
     <ClInclude Include="SqQueue.h">
+      <Filter>头文件\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkQueue.h">
       <Filter>头文件\Queue</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,9 +7,9 @@
 
 typedef int ElemType;
 
-typedef struct LNode {
+typedef struct LinkNode {
 	ElemType data;
-	struct LNode *Prior, *Next;
+	struct LinkNode *Prior, *next;
 } DLNode, *DLinkList;
 
 DLinkList InitList();/*初始化链表*/

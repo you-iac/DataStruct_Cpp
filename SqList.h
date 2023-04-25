@@ -10,7 +10,7 @@ typedef struct SLNode{
 	int Length, Maxsize;
 } *SqList;
 
-SqList 	InitList	();/*初始化顺序表*/
+SqList 		InitList	();/*初始化顺序表*/
 bool 		ListInsert	(SqList &L, int i, ElemType e);
 bool 		ListDelete	(SqList &L, int i);/**/
 bool 		PrintList	(SqList &L);

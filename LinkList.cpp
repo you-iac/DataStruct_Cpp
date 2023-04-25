@@ -2,17 +2,17 @@
 #include<cstdio>
 #include<cstdlib>
 
-inline LinkList InitList	()/*初始化链表*/
+LinkList InitList	()/*初始化链表*/
 {
 	LinkList L = (LinkList)malloc(sizeof(LinkList));
 	L->data = 0x80000000;
-	L->Next = NULL;
+	L->next = NULL;
 	return L;
 }
 LinkList List_HeadInsert	(LinkList &L)/*头插法初始化链表*/
 {
 	L = (LinkList)malloc(sizeof(LinkList));
-	L->Next = NULL;
+	L->next = NULL;
 	
 	int x = 0;
 	LinkList P = NULL;
@@ -22,8 +22,8 @@ LinkList List_HeadInsert	(LinkList &L)/*头插法初始化链表*/
 	{
 		P = (LinkList)malloc(sizeof(LinkList));
 		P->data = x;
-		P->Next = L->Next;
-		L->Next = P;
+		P->next = L->next;
+		L->next = P;
 		scanf("%d", &x);
 	}
 	return L;
@@ -31,16 +31,16 @@ LinkList List_HeadInsert	(LinkList &L)/*头插法初始化链表*/
 LinkList List_TailInsert	(LinkList &L)/*尾插法初始化链表*/
 {
 	L = (LinkList)malloc(sizeof(LinkList));
-	L->Next = NULL;
+	L->next = NULL;
 	int x = 0;
 	LinkList Tail = L;
 	
 	scanf("%d", &x);
 	while(x != 65536)
 	{
-		Tail->Next = (LinkList)malloc(sizeof(LinkList));
+		Tail->next = (LinkList)malloc(sizeof(LinkList));
 		Tail->data = x;
-		Tail = Tail->Next;
+		Tail = Tail->next;
 		Tail = NULL;
 		scanf("%d", &x);
 	}
@@ -52,16 +52,16 @@ bool ListInsert	(LinkList &L, int i, ElemType e)
 	if (i >= 1 && i <= Length(L)+1)
 	{
 		/*创建节点*/
-		LNode* p = L;
-		LNode* T = (LNode*)malloc(sizeof(LNode));
+		LinkNode* p = L;
+		LinkNode* T = (LinkNode*)malloc(sizeof(LinkNode));
 		T->data = e;
-		T->Next = NULL;
+		T->next = NULL;
 
-		for (; i-1 > 0; i--, p = p->Next);/*寻找要插入是位置*/
+		for (; i-1 > 0; i--, p = p->next);/*寻找要插入是位置*/
 
 		/*插入操作*/
-		T->Next = p->Next;
-		p->Next = T;
+		T->next = p->next;
+		p->next = T;
 
 	}
 	return 0;
@@ -72,9 +72,9 @@ bool ListDelete	(LinkList *L, int i)/**/
 }
 bool PrintList	(LinkList &L)
 {
-	LinkList p = L->Next;
+	LinkList p = L->next;
 
-	for(; p; p=p->Next)
+	for(; p; p=p->next)
 		printf("%d ", p->data);
 	printf("\n");
 
@@ -92,8 +92,8 @@ ElemType 	GetElem		(LinkList &L, int i)
 int  Length	(LinkList &L)
 {
 	int i = 0;
-	LNode* p = L;
-	for(i = 0; p->Next!=NULL; i++, p=p->Next);
+	LinkNode* p = L;
+	for(i = 0; p->next!=NULL; i++, p=p->next);
 		
 	return i;
 }

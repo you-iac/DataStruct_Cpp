@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="DLinkList.cpp" />
     <ClCompile Include="LinkList.cpp" />
+    <ClCompile Include="LinkQueue.cpp" />
     <ClCompile Include="LinkStack.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SqList.cpp" />
@@ -139,6 +140,7 @@
   <ItemGroup>
     <ClInclude Include="DLinkList.h" />
     <ClInclude Include="LinkList.h" />
+    <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="SqQueue.h" />

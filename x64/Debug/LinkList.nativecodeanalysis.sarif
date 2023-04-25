@@ -1,0 +1,897 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“L”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 2,
+                  "endLine": 8,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "InitList",
+                  "decoratedName": "?InitList@@YAPEAULinknode@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 7,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“L”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“L”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “scanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 2,
+                  "endLine": 20,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_HeadInsert",
+                  "decoratedName": "?List_HeadInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “scanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 3,
+                  "endLine": 27,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_HeadInsert",
+                  "decoratedName": "?List_HeadInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“L”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 2,
+                  "endLine": 15,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_HeadInsert",
+                  "decoratedName": "?List_HeadInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 4
+                          }
+                        },
+                        "message": {
+                          "text": "“L”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“L”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“P”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 3,
+                  "endLine": 24,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_HeadInsert",
+                  "decoratedName": "?List_HeadInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 14,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 18,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "“P”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“P”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “scanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 2,
+                  "endLine": 38,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_TailInsert",
+                  "decoratedName": "?List_TailInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “scanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 3,
+                  "endLine": 45,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_TailInsert",
+                  "decoratedName": "?List_TailInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“L”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 2,
+                  "endLine": 34,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_TailInsert",
+                  "decoratedName": "?List_TailInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 4
+                          }
+                        },
+                        "message": {
+                          "text": "“L”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 34,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“L”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“Tail”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 3,
+                  "endLine": 41,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "List_TailInsert",
+                  "decoratedName": "?List_TailInsert@@YAPEAULinknode@@AEAPEAU1@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 33,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 34,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 35,
+                            "startColumn": 6
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 36,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 41,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 43,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 44,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“Tail”为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 45,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“x!=65536”)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 41,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“Tail”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“T”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 3,
+                  "endLine": 57,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ListInsert",
+                  "decoratedName": "?ListInsert@@YA_NAEAPEAULinknode@@HH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 52,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 56,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "“T”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+                          },
+                          "region": {
+                            "startLine": 57,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“T”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/28695/source/repos/DataStruct_Cpp/LinkList.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "20dc670545a7813c5f79d8fc98500a901f5696f95a5ca8c7eb537ffbcbb68703"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/28695/source/repos/datastruct_cpp/linklist.h"
+          },
+          "hashes": {
+            "sha-256": "20be2cc873afd910030833b81dd286f9fefe178ae2d101765957c448c27949c1"
+          }
+        }
+      ]
+    }
+  ]
+}

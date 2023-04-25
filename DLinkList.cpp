@@ -1,38 +1,38 @@
 #include"DLinkList.h"
 
-/*åˆå§‹åŒ–é“¾è¡¨*/
-inline DLinkList InitList()
+/*³õÊ¼»¯Á´±í*/
+DLinkList InitList()
 {
 	DLinkList L = (DLNode*)malloc(sizeof(DLNode));
-	L->Prior = L->Next = NULL;
+	L->Prior = L->next = NULL;
 	L->data = 0x80000000;
 	return L;
 }
-/*å¤´æ’æ³•åˆå§‹åŒ–é“¾è¡¨*/
+/*Í·²å·¨³õÊ¼»¯Á´±í*/
 DLinkList List_HeadInsert(DLinkList L);
-/*å°¾æ’æ³•åˆå§‹åŒ–é“¾è¡¨*/
+/*Î²²å·¨³õÊ¼»¯Á´±í*/
 DLinkList List_TailInsert(DLinkList L);
-/*é“¾è¡¨æ’å…¥æ“ä½œ*/
+/*Á´±í²åÈë²Ù×÷*/
 bool 		ListInsert(DLinkList L, int i, ElemType e)
 {
 	if (i >= 1 && i <= Length(L) + 1)
 	{
-		/*åˆ›å»ºèŠ‚ç‚¹*/
+		/*´´½¨½Úµã*/
 		DLNode* p = L;
 		DLNode* T = (DLNode*)malloc(sizeof(DLNode));
 		T->data = e;
-		T->Prior = T->Next = NULL;
+		T->Prior = T->next = NULL;
 
-		for (; i - 1 > 0; i--, p = p->Next);/*å¯»æ‰¾è¦æ’å…¥çš„ä½ç½®*/
+		for (; i - 1 > 0; i--, p = p->next);/*Ñ°ÕÒÒª²åÈëµÄÎ»ÖÃ*/
 
-		/*æ’å…¥æ“ä½œ*/
-		/*å¤„ç†åç»§æŒ‡é’ˆ*/
-		T->Next = p->Next;
-		p->Next = T;
+		/*²åÈë²Ù×÷*/
+		/*´¦Àíºó¼ÌÖ¸Õë*/
+		T->next = p->next;
+		p->next = T;
 
-		/*å¤„ç†å‰é©±æŒ‡é’ˆ*/
-		/*å¦‚æœTçš„åç»§å­˜åœ¨ï¼Œå°±è®©åç»§æŒ‡å‘T*/
-		if (T->Next)T->Next->Prior = T;
+		/*´¦ÀíÇ°ÇıÖ¸Õë*/
+		/*Èç¹ûTµÄºó¼Ì´æÔÚ£¬¾ÍÈÃºó¼ÌÖ¸ÏòT*/
+		if (T->next)T->next->Prior = T;
 		T->Prior = p;
 	}
 	return 0;
@@ -40,9 +40,9 @@ bool 		ListInsert(DLinkList L, int i, ElemType e)
 bool 		ListDelete(DLinkList L, int i);/**/
 bool 		PrintList(DLinkList L)
 {
-	DLinkList p = L->Next;
+	DLinkList p = L->next;
 
-	for (; p; p = p->Next)
+	for (; p; p = p->next)
 		printf("%d ", p->data);
 	printf("\n");
 
@@ -55,8 +55,8 @@ ElemType	GetElem(DLinkList L, int i);
 int  Length(DLinkList L)
 {
 	int i = 0;
-	LNode* p = L;
-	for (i = 0; p->Next != NULL; i++, p = p->Next);
+	LinkNode* p = L;
+	for (i = 0; p->next != NULL; i++, p = p->next);
 
 	return i;
 }
@@ -73,10 +73,10 @@ void DLinkListTest()
 		ListInsert(L, 1, rand());
 
 	PrintList(L);
-	printf("é“¾è¡¨é•¿åº¦:%d\n\n", Length(L));
+	printf("Á´±í³¤¶È:%d\n\n", Length(L));
 
-	printf("é€†å‘è¾“å‡ºï¼š\n");
-	for (p = L; p->Next; p = p->Next);
+	printf("ÄæÏòÊä³ö£º\n");
+	for (p = L; p->next; p = p->next);
 
 	for (; p->Prior; p = p->Prior)
 		printf("%d ", p->data);
