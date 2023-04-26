@@ -1,5 +1,4 @@
-#include"LinkQueue.h"
-#include"LinkList.h"
+#include"SqQueue.h"
 #include<cstdio> 
 #include<cstring>
 #include<stack>
@@ -7,7 +6,6 @@
 
 int main()
 {
-    LinkQueueTest();
-    printf("hello");
+    
+    QueueTest();
 }
-

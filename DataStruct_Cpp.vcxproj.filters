@@ -54,6 +54,9 @@
     <ClCompile Include="SqList.cpp">
       <Filter>头文件\List</Filter>
     </ClCompile>
+    <ClCompile Include="LinkQueue.cpp">
+      <Filter>头文件\Queue</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLinkList.h">
