@@ -1,13 +1,10 @@
-#include<cstdio> 
-#include<cstring>
-#include<stack>
-#include<vector>
-#include <iostream>
-
+#include"Algorithm.h"
+#include <stdio.h>
 using namespace std;
 
 int main()
 {
-    vector<int> v ;
-
+    //BinHexOct(2023, 8);
+    char string[] = "(1+2)-3*4/(2-5)";
+    Infix_Postfix(string);
 }

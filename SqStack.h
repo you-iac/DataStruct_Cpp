@@ -24,4 +24,6 @@ ElemType GetTop(SqStack& S);
 
 void PrintStack(SqStack& S);
 void SqStackTest();
+
+
 #endif

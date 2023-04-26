@@ -13,23 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Tree">
+      <UniqueIdentifier>{da17a8be-d4bf-497b-8a81-bea055d9c8d4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="头文件\List">
       <UniqueIdentifier>{69b424fe-56af-42cc-b82a-bbbe4187089f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\Stack">
-      <UniqueIdentifier>{46289c36-4d35-4dfe-ba20-2dceb3ce3a1a}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\Queue">
       <UniqueIdentifier>{b7229392-58f3-4c4d-be94-6483cc60e973}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Tree">
-      <UniqueIdentifier>{da17a8be-d4bf-497b-8a81-bea055d9c8d4}</UniqueIdentifier>
+    <Filter Include="头文件\Stack">
+      <UniqueIdentifier>{46289c36-4d35-4dfe-ba20-2dceb3ce3a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\String">
+      <UniqueIdentifier>{1345bb21-c5a7-4934-9d77-673fd633b297}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -54,28 +54,49 @@
     <ClCompile Include="SqList.cpp">
       <Filter>头文件\List</Filter>
     </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>头文件\String</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkList.h">
-      <Filter>头文件\List</Filter>
-    </ClInclude>
     <ClInclude Include="SqList.h">
       <Filter>头文件\List</Filter>
     </ClInclude>
-    <ClInclude Include="LinkStack.h">
-      <Filter>头文件\Stack</Filter>
+    <ClInclude Include="Matrix.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="SqStack.h">
-      <Filter>头文件\Stack</Filter>
+    <ClInclude Include="LinkList.h">
+      <Filter>头文件\List</Filter>
     </ClInclude>
-    <ClInclude Include="SqQueue.h">
-      <Filter>头文件\Queue</Filter>
+    <ClInclude Include="DLinkList.h">
+      <Filter>头文件\List</Filter>
     </ClInclude>
     <ClInclude Include="LinkQueue.h">
       <Filter>头文件\Queue</Filter>
     </ClInclude>
-    <ClInclude Include="DLinkList.h">
-      <Filter>头文件\List</Filter>
+    <ClInclude Include="SqQueue.h">
+      <Filter>头文件\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="SqStack.h">
+      <Filter>头文件\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkStack.h">
+      <Filter>头文件\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>头文件\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
