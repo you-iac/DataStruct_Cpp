@@ -1,6 +1,6 @@
 #include"DLinkList.h"
 
-/*鍒濆鍖栭摼琛?/
+/*鍒濆鍖栭摼琛*/
 DLinkList InitList()
 {
 	DLinkList L = (DLNode*)malloc(sizeof(DLNode));
@@ -8,30 +8,30 @@ DLinkList InitList()
 	L->data = 0x80000000;
 	return L;
 }
-/*澶存彃娉曞垵濮嬪寲閾捐〃*/
+/*头插法初始化链表*/
 DLinkList List_HeadInsert(DLinkList L);
-/*灏炬彃娉曞垵濮嬪寲閾捐〃*/
+/*尾插法初始化链表*/
 DLinkList List_TailInsert(DLinkList L);
-/*閾捐〃鎻掑叆鎿嶄綔*/
+/*链表插入操作*/
 bool 		ListInsert(DLinkList L, int i, ElemType e)
 {
 	if (i >= 1 && i <= Length(L) + 1)
 	{
-		/*鍒涘缓鑺傜偣*/
+		/*创建节点*/
 		DLNode* p = L;
 		DLNode* T = (DLNode*)malloc(sizeof(DLNode));
 		T->data = e;
 		T->Prior = T->next = NULL;
 
-		for (; i - 1 > 0; i--, p = p->next);/*瀵绘壘瑕佹彃鍏ョ殑浣嶇疆*/
+		for (; i - 1 > 0; i--, p = p->next);/*寻找要插入的位置*/
 
-		/*鎻掑叆鎿嶄綔*/
-		/*澶勭悊鍚庣户鎸囬拡*/
+		/*插入操作*/
+		/*处理后继指针*/
 		T->next = p->next;
 		p->next = T;
 
-		/*澶勭悊鍓嶉┍鎸囬拡*/
-		/*濡傛灉T鐨勫悗缁у瓨鍦紝灏辫鍚庣户鎸囧悜T*/
+		/*处理前驱指针*/
+		/*如果T的后继存在，就让后继指向T*/
 		if (T->next)T->next->Prior = T;
 		T->Prior = p;
 	}
@@ -73,9 +73,9 @@ void DLinkListTest()
 		ListInsert(L, 1, rand());
 
 	PrintList(L);
-	printf("閾捐〃闀垮害:%d\n\n", Length(L));
+	printf("链表长度:%d\n\n", Length(L));
 
-	printf("閫嗗悜杈撳嚭锛歕n");
+	printf("逆向输出:\n");
 	for (p = L; p->next; p = p->next);
 
 	for (; p->Prior; p = p->Prior)

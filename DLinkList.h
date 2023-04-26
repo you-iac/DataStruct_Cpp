@@ -1,5 +1,5 @@
 #ifndef _DLinkList_
-#define _DinkList_
+#define _DLinkList_
 #include<cstdbool>
 #include<cstdio>
 #include<cstdlib>
@@ -9,12 +9,12 @@ typedef int ElemType;
 
 typedef struct LinkNode {
 	ElemType data;
-	struct LinkNode *Prior, *next;
-} DLNode, *DLinkList;
+	struct LinkNode* Prior, * next;
+} DLNode, * DLinkList;
 
-DLinkList InitList();/*åˆå§‹åŒ–é“¾è¡¨*/
-DLinkList List_HeadInsert(DLinkList L);/*å¤´æ’æ³•åˆå§‹åŒ–é“¾è¡¨*/
-DLinkList List_TailInsert(DLinkList L);/*å°¾æ’æ³•åˆå§‹åŒ–é“¾è¡¨*/
+DLinkList InitList();/*³õÊ¼»¯Á´±í*/
+DLinkList List_HeadInsert(DLinkList L);/*Í·²å·¨³õÊ¼»¯Á´±í*/
+DLinkList List_TailInsert(DLinkList L);/*Î²²å·¨³õÊ¼»¯Á´±í*/
 bool 		ListInsert(DLinkList L, int i, ElemType e);
 bool 		ListDelete(DLinkList L, int i);/**/
 bool 		PrintList(DLinkList L);

@@ -7,6 +7,7 @@ void InitQueue(LinkQueue& Q)/*³õÊ¼»¯*/
 }
 bool QueueEmpty(LinkQueue& Q)
 {
+    if(Q->front == Q->rear)
         return false;
     else
         return true;
@@ -16,14 +17,19 @@ bool EnQueue(LinkQueue& Q, ElemType e)
     LinkNode* T = (LinkNode*)malloc(sizeof(LinkNode));
     T->next = NULL;
 
+    Q->rear->next = T;
+    Q->rear = T;
+
     return true;
 }
 bool DeQueue(LinkQueue& Q, ElemType& e)/**/
 {
+    LinkNode* T = NULL;
     if (QueueEmpty(Q))
     {
-
+        T = Q->front->next;
         e = T->data;
+        Q->front->next = T->next;
         free(T);
         return true;
     }
@@ -34,9 +40,13 @@ bool DeQueue(LinkQueue& Q, ElemType& e)/**/
 
 void PrintQueue(LinkQueue& Q)
 {
+    LinkNode* T = Q->front;
+    for(T; T != NULL; T = T->next)
         printf("%d->", T->data);
     printf("NULL\n");
 }
+
+void LinkQueueTest()
 {
     LinkQueue Q;
     InitQueue(Q);

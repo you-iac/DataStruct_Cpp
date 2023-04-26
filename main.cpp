@@ -1,11 +1,13 @@
-#include"SqQueue.h"
 #include<cstdio> 
 #include<cstring>
 #include<stack>
+#include<vector>
+#include <iostream>
 
+using namespace std;
 
 int main()
 {
-    
-    QueueTest();
+    vector<int> v ;
+
 }
