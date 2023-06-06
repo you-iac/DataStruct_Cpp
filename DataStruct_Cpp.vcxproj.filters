@@ -28,6 +28,9 @@
     <Filter Include="头文件\String">
       <UniqueIdentifier>{1345bb21-c5a7-4934-9d77-673fd633b297}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Graph">
+      <UniqueIdentifier>{529a2754-4cd0-4c08-8e14-512a194518c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,22 +57,25 @@
     <ClCompile Include="SqList.cpp">
       <Filter>头文件\List</Filter>
     </ClCompile>
-    <ClCompile Include="Matrix.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
     <ClCompile Include="Algorithm.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="String.cpp">
       <Filter>头文件\String</Filter>
     </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>头文件\String</Filter>
+    </ClCompile>
+    <ClCompile Include="BiTree.cpp">
+      <Filter>头文件\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="MGraph.cpp">
+      <Filter>头文件\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SqList.h">
       <Filter>头文件\List</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrix.h">
-      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LinkList.h">
       <Filter>头文件\List</Filter>
@@ -89,14 +95,20 @@
     <ClInclude Include="LinkStack.h">
       <Filter>头文件\Stack</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="String.h">
       <Filter>头文件\String</Filter>
     </ClInclude>
     <ClInclude Include="Algorithm.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>头文件\String</Filter>
+    </ClInclude>
+    <ClInclude Include="BiTree.h">
+      <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="MGraph.h">
+      <Filter>头文件\Graph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

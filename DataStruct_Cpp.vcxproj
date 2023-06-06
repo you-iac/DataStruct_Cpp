@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithm.cpp" />
+    <ClCompile Include="BiTree.cpp" />
     <ClCompile Include="DLinkList.cpp" />
     <ClCompile Include="LinkList.cpp" />
     <ClCompile Include="LinkQueue.cpp" />
     <ClCompile Include="LinkStack.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MGraph.cpp" />
     <ClCompile Include="SqList.cpp" />
     <ClCompile Include="SqQueue.cpp" />
     <ClCompile Include="SqStack.cpp" />
@@ -141,12 +143,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="BiTree.h" />
     <ClInclude Include="DLinkList.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="Matrix.h" />
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="MGraph.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="SqQueue.h" />
     <ClInclude Include="SqStack.h" />
