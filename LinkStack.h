@@ -1,5 +1,6 @@
 #ifndef _LinkStack_
 #define _LinkStack_
+
 #include<cstdbool>
 #include<cstdlib>
 #include<cstdio>

@@ -63,10 +63,10 @@ void Infix_Postfix(char string[])
             Stack.push(X);
         }
     }
-
+    //输出全部内容
     for (; Stack.size() > 0; Stack.pop())
         Queue.push(Stack.top());
-
+    //出队列
     for(; Queue.size()>0;Queue.pop())
         printf("%c", Queue.front());
 /*
@@ -78,3 +78,4 @@ void Infix_Postfix(char string[])
         若为'*','/', 输出字符为'*','/'直到空。
 */
 }
+

@@ -1,10 +1,12 @@
-#include"Algorithm.h"
+#include"Sort.h"
 #include <stdio.h>
 using namespace std;
 
 int main()
 {
-    //BinHexOct(2023, 8);
-    char string[] = "(1+2)-3*4/(2-5)";
-    Infix_Postfix(string);
+    int A[10] = {49,38,65,97,76,13,27,49,100,20};
+
+    Quick_Sort(A, 0,9);
+
+    return 1;
 }
