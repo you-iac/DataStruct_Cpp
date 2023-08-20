@@ -135,8 +135,6 @@
     <ClCompile Include="LinkStack.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrix.cpp" />
-    <ClCompile Include="MGraph.cpp" />
-    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="SqList.cpp" />
     <ClCompile Include="SqQueue.cpp" />
     <ClCompile Include="SqStack.cpp" />
@@ -150,8 +148,7 @@
     <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="Matrix.h" />
-    <ClInclude Include="MGraph.h" />
-    <ClInclude Include="Sort.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="SqQueue.h" />
     <ClInclude Include="SqStack.h" />
