@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+      <FILENAME>DLinkList.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“L”的引用。</DESCRIPTION>
+    <FUNCTION>InitList</FUNCTION>
+    <DECORATED>?InitList@@YAPEAULinkNode@@XZ</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+        <FILENAME>DLinkList.cpp</FILENAME>
+        <LINE>6</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“L”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+        <FILENAME>DLinkList.cpp</FILENAME>
+        <LINE>7</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“L”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+      <FILENAME>DLinkList.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>取消对 NULL 指针“T”的引用。</DESCRIPTION>
+    <FUNCTION>ListInsert</FUNCTION>
+    <DECORATED>?ListInsert@@YA_NPEAULinkNode@@HH@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+        <FILENAME>DLinkList.cpp</FILENAME>
+        <LINE>18</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+        <FILENAME>DLinkList.cpp</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+        <FILENAME>DLinkList.cpp</FILENAME>
+        <LINE>22</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“T”可能为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\汪永财\source\repos\DataStruct_Cpp\</FILEPATH>
+        <FILENAME>DLinkList.cpp</FILENAME>
+        <LINE>23</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>已取消对“T”的引用，但可能仍为 NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

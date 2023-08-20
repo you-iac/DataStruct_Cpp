@@ -8,7 +8,7 @@
         "driver": {
           "name": "PREfast",
           "fullName": "PREfast Code Analysis",
-          "version": "14.35.32217.1",
+          "version": "14.36.32535.0",
           "informationUri": "https://aka.ms/cpp/ca"
         }
       },
@@ -20,7 +20,7 @@
       "artifacts": [
         {
           "location": {
-            "uri": "file:///c:/users/28695/source/repos/datastruct_cpp/sqstack.cpp"
+            "uri": "file:///c:/users/汪永财/source/repos/datastruct_cpp/sqstack.cpp"
           },
           "roles": [
             "analysisTarget"
@@ -31,10 +31,10 @@
         },
         {
           "location": {
-            "uri": "file:///c:/users/28695/source/repos/datastruct_cpp/sqstack.h"
+            "uri": "file:///c:/users/汪永财/source/repos/datastruct_cpp/sqstack.h"
           },
           "hashes": {
-            "sha-256": "74583bce8077f986f49d61d2503e79c00469a7feb494f58f2c2bbb4e00f141bd"
+            "sha-256": "decb3492ebb4628e1a105e230ca0375900d45fc856e481cc366e637afd4e1cf6"
           }
         }
       ]

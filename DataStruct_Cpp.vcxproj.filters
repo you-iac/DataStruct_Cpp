@@ -19,40 +19,16 @@
     <Filter Include="头文件\List">
       <UniqueIdentifier>{69b424fe-56af-42cc-b82a-bbbe4187089f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Queue">
-      <UniqueIdentifier>{b7229392-58f3-4c4d-be94-6483cc60e973}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\Stack">
-      <UniqueIdentifier>{46289c36-4d35-4dfe-ba20-2dceb3ce3a1a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\String">
       <UniqueIdentifier>{1345bb21-c5a7-4934-9d77-673fd633b297}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\Graph">
-      <UniqueIdentifier>{529a2754-4cd0-4c08-8e14-512a194518c4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\Sort">
-      <UniqueIdentifier>{20c7c712-5e5d-4848-92a4-d5e2a9956ea4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="SqQueue.cpp">
-      <Filter>头文件\Queue</Filter>
-    </ClCompile>
     <ClCompile Include="LinkList.cpp">
       <Filter>头文件\List</Filter>
-    </ClCompile>
-    <ClCompile Include="LinkStack.cpp">
-      <Filter>头文件\Stack</Filter>
-    </ClCompile>
-    <ClCompile Include="SqStack.cpp">
-      <Filter>头文件\Stack</Filter>
-    </ClCompile>
-    <ClCompile Include="LinkQueue.cpp">
-      <Filter>头文件\Queue</Filter>
     </ClCompile>
     <ClCompile Include="DLinkList.cpp">
       <Filter>头文件\List</Filter>
@@ -69,14 +45,20 @@
     <ClCompile Include="Matrix.cpp">
       <Filter>头文件\String</Filter>
     </ClCompile>
-    <ClCompile Include="BiTree.cpp">
+    <ClCompile Include="BinTree.cpp">
       <Filter>头文件\Tree</Filter>
     </ClCompile>
-    <ClCompile Include="MGraph.cpp">
-      <Filter>头文件\Graph</Filter>
+    <ClCompile Include="LinkStack.cpp">
+      <Filter>头文件\List</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.cpp">
-      <Filter>头文件\Sort</Filter>
+    <ClCompile Include="SqStack.cpp">
+      <Filter>头文件\List</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkQueue.cpp">
+      <Filter>头文件\List</Filter>
+    </ClCompile>
+    <ClCompile Include="SqQueue.cpp">
+      <Filter>头文件\List</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -89,18 +71,6 @@
     <ClInclude Include="DLinkList.h">
       <Filter>头文件\List</Filter>
     </ClInclude>
-    <ClInclude Include="LinkQueue.h">
-      <Filter>头文件\Queue</Filter>
-    </ClInclude>
-    <ClInclude Include="SqQueue.h">
-      <Filter>头文件\Queue</Filter>
-    </ClInclude>
-    <ClInclude Include="SqStack.h">
-      <Filter>头文件\Stack</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkStack.h">
-      <Filter>头文件\Stack</Filter>
-    </ClInclude>
     <ClInclude Include="String.h">
       <Filter>头文件\String</Filter>
     </ClInclude>
@@ -108,16 +78,25 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Matrix.h">
-      <Filter>头文件\String</Filter>
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BiTree.h">
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree.h">
       <Filter>头文件\Tree</Filter>
     </ClInclude>
-    <ClInclude Include="MGraph.h">
-      <Filter>头文件\Graph</Filter>
+    <ClInclude Include="LinkStack.h">
+      <Filter>头文件\List</Filter>
     </ClInclude>
-    <ClInclude Include="Sort.h">
-      <Filter>头文件\Sort</Filter>
+    <ClInclude Include="SqStack.h">
+      <Filter>头文件\List</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkQueue.h">
+      <Filter>头文件\List</Filter>
+    </ClInclude>
+    <ClInclude Include="SqQueue.h">
+      <Filter>头文件\List</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
